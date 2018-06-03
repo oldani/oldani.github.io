@@ -1,9 +1,10 @@
 body {
   font-family: 'Inconsolata', monospace;
-  font-size: 18px;
   font-weight: 700;
   color: #F8F8E6;
   background-color: #1E1F29;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .flex {
@@ -16,9 +17,14 @@ div.col-12 {
   max-width: 100%;
 }
 
-section > p,
+section > p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: justify;
+}
+
 section > div {
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 .prompt {
   color: #68fdfe;
@@ -72,13 +78,22 @@ section.experiences p span {
   background-color: #F8F8E6;
   color: #1E1F29;
 }
-/*section.experiences p {
-  width: 50%;
-}*/
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
   div.col-md-6 {
     width: 50%;
     max-width: 50%;
   }
-}*/
+
+  .experiences > p,
+  .contact > p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .experiences > p,
+  .contact > p {
+    width: 50%;
+  }
+}
