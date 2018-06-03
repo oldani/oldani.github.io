@@ -74,6 +74,10 @@ a, a:hover, a:visited {
   color: #67f80b;
 }
 
+section.me p {
+  font-size: 1.5em;
+}
+
 section.experiences p span {
   background-color: #F8F8E6;
   color: #1E1F29;
